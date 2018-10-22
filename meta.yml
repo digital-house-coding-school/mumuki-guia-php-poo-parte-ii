@@ -1,0 +1,11 @@
+---
+name: 'Clase 9: POO Parte II'
+locale: es
+type: learning
+beta: false
+teacher_info: ''
+language: php
+id_format: "%05d"
+order:
+- 1
+- 2

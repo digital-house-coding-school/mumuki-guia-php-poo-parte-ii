@@ -1,1 +1,1 @@
-Segunda parte de Programación Orientada a Objetos en PHP para Digital House
+Segunda parte de Programación Orientada a Objetos en PHP para Digital House.

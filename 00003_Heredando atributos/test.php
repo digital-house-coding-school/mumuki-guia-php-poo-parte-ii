@@ -33,11 +33,22 @@ public function testSetGetNombre() : void {
 
 public function testApellido(): void {
   $persona = new Persona();
-  $props = get_object_vars($persona);
   
   $this->assertTrue(property_exists('Persona', 'apellido'), "Falta la propiedad apellido");
   
-  $this->assertFalse(array_key_exists("apellido", $props), "El apellido debe ser privado");
+  $reflect = new ReflectionClass($persona);
+
+  $props = $reflect->getProperties(ReflectionProperty::IS_PROTECTED);
+  
+  $hayApellido = false;
+  
+  foreach ($props as $prop) {
+    if ($prop->name == "apellido") {
+      $hayApellido = true;
+    }
+  }
+  
+  $this->assertTrue($hayApellido, "El atributo apellido no es protegido");
 }
 
 public function testSetGetApellido() : void {
@@ -55,11 +66,22 @@ public function testSetGetApellido() : void {
 
 public function testEmail(): void {
   $persona = new Persona();
-  $props = get_object_vars($persona);
   
   $this->assertTrue(property_exists('Persona', 'email'), "Falta la propiedad email");
   
-  $this->assertFalse(array_key_exists("email", $props), "El email debe ser privado");
+  $reflect = new ReflectionClass($persona);
+
+  $props = $reflect->getProperties(ReflectionProperty::IS_PROTECTED);
+  
+  $hayEmail = false;
+  
+  foreach ($props as $prop) {
+    if ($prop->name == "email") {
+      $hayEmail = true;
+    }
+  }
+  
+  $this->assertTrue($hayEmail, "El atributo email no es protegido");
 }
 
 public function testSetGetEmail() : void {

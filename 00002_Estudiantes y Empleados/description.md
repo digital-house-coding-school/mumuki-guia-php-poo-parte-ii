@@ -12,6 +12,6 @@ Dado esto, tu objetivo es:
 
 > 2. Armar la clase `Estudiante` que herede de la clase `Persona` y agregue el atributo **egresado** que será un booleano que indica si un estudiante terminó el curso o no. Por default este atributo debe indicar false (puede indicarse por default en el atributo o mediante el constructor)
 
-> 3. Agregar el metodo `esEgresado` en la clase `Estudiante` que retorne el valor de el atributo **egresado**
+> 3. Agregar el metodo `esEgresado` en la clase `Estudiante` que retorne el valor de el atributo **egresado** (notese que cuando el atributo es booleano es estanadar que el getter comience con el verbo "es" (o en inglés "is") en vez de usar la palabra "get")
 
 > 4. Agregar el método `terminarCursada` que modifique el atributo **egresado** a **TRUE**

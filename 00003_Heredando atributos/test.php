@@ -7,7 +7,15 @@ public function testNombre(): void {
 
   $props = $reflect->getProperties(ReflectionProperty::IS_PROTECTED);
   
-  var_dump($props);exit;
+  $hayNombre = false;
+  
+  foreach ($props as $prop) {
+    if ($prop->name == "nombre") {
+      $hayNombre = true;
+    }
+  }
+  
+  $this->assertTrue($hayNombre, "El atributo nombre no es protegido");
 }
 
 public function testSetGetNombre() : void {

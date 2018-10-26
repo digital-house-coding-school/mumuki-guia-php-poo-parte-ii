@@ -16,5 +16,6 @@ public function testIngresarAEdificio(): void {
   $r = new ReflectionMethod("Persona", "ingresarAlEdificio");
   
   $this->assertTrue($r->isAbstract(), "El metodo ingresarAlEdificio no es abstracto");
-  var_dump($r->getParameters());exit;
+  
+  $this->assertTrue(count($r->getParameters()) === 1, "El método ingresarAlEdificio debe recibir un parámetro");
 }

@@ -3,5 +3,7 @@ public function testIngresarAEdificio(): void {
   
   $methods = $oRefl->getMethods();
   
-  var_dump($methods);exit;
+  $r = new ReflectionMethod("Persona", "sarasa");
+  
+  var_dump($r);exit;
 }

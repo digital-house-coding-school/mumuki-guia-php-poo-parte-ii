@@ -8,4 +8,6 @@ public function testEmpleado(): void {
   $email = $empleado->getEmail();
   
   $sueldo = $empleado->getSueldo();
+  
+  $this->assertTrue($nombre === "Dario", "El constructor parecería no estar asignando el nombre");
 }

@@ -5,5 +5,5 @@ public function testIngresarAEdificio(): void {
   
   $r = new ReflectionMethod("Persona", "sarasa");
   
-  var_dump($r);exit;
+  var_dump($r->getParameters());exit;
 }

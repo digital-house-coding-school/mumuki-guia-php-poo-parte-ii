@@ -18,6 +18,6 @@ public function testCalcularCuotaFinal(): void {
   Estudiante::$precioCuota = 500;
   
   $resul = Estudiante::calcularCuotaFinal(20);
-  
-  $this->assertTrue($resul === 400, "El método no retorna lo esperado");
+  var_dump($resul);exit;
+  $this->assertTrue($resul == 400, "El método no retorna lo esperado");
 }

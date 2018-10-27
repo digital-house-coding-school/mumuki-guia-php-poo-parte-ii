@@ -9,5 +9,5 @@ public function testPagar() : void {
   
   $resul= $empleado->pagar();
   
-  $this->assertTrue(strtolower($resul) === "a dario sus se le depositaron $500", "Se esperaba 'A Dario Sus se le depositaron $500' y se recibió $resul");
+  $this->assertTrue(strtolower($resul) === "a dario sus se le depositaron $500", "Se esperaba 'A Dario Sus se le depositaron $500' y se recibió '$resul'");
 }

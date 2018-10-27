@@ -1,3 +1,19 @@
-public function testDescriptionExample(): void {
-  $this->assertTrue(true);
+public function testFinDeMes(): void {
+  $prov1 = new ProveedorExterno("Juan", "Perez", "juan@perez.com");
+  
+  $prov1->agregarPago(100);
+  $prov1->agregarPago(200);
+  
+  $prov2 = new ProveedorExterno("Sara", "Sanchez", "sara@sara.com");
+  
+  $prov2->agregarPago(2000);
+  $prov2->agregarPago(4000);
+  $prov2->agregarPago(200);
+  
+  $emp1 = new Empleado("Dario,"Sus","dario@dh.com",500);
+  $emp2 = new Empleado("Ale","Viv","alejandro@dh.com", 600);
+  
+  $pagables = [$prov1, $prov2, $emp1, $emp2];
+  
+  $resuls = finDeMes($pagables);
 }

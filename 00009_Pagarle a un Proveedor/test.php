@@ -1,11 +1,11 @@
 public function testImplementa(): void {
-  $prov = new Empleado("Juan", "Perez", "juan@perez.com);
+  $prov = new Empleado("Juan", "Perez", "juan@perez.com");
   
   $this->assertTrue($empleado instanceof Pagable, "La clase Empleado no implementa Pagable");
 }
 
 public function testPagar() : void {
-  $prov = new Empleado("Juan", "Perez", "juan@perez.com);
+  $prov = new Empleado("Juan", "Perez", "juan@perez.com");
   
   $prov->agregarPago(500);
   $prov->agregarPago(100);

@@ -1,0 +1,1 @@
+Para referenciar un atributo estátio se hace con el nombre de la clase y el operador **::**

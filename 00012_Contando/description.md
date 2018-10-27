@@ -10,4 +10,6 @@
 
 ¡Se ejecuta el constructor!
 
-Dado esto, vamos a modificar el constructor de la clase Estudiante para que incremente el atributo estático `cantidadEstudiantes`
+Dado esto, vamos a modificar el constructor de la clase Estudiante para que incremente el atributo estático `cantidadEstudiantes
+
+Cualquier cosa, te dejamos una pista acá abajo :point_down:

@@ -5,7 +5,7 @@ public function testCalcularCuotaFinal(): void {
   $esEstatico = false;
   
   foreach ($clase->getMethods() as $m) {
-   if ($m === "calcularCuotaFinal") {
+   if ($m->name === "calcularCuotaFinal") {
     $estaMetodo = true;
     $esEstatico = $m->isStatic();
    }

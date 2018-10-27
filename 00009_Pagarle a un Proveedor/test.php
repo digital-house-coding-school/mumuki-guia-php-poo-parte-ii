@@ -1,7 +1,7 @@
 public function testImplementa(): void {
   $prov = new ProveedorExterno("Juan", "Perez", "juan@perez.com");
   
-  $this->assertTrue($empleado instanceof Pagable, "La clase ProveedorExterno no implementa Pagable");
+  $this->assertTrue($prov instanceof Pagable, "La clase ProveedorExterno no implementa Pagable");
 }
 
 public function testPagar() : void {

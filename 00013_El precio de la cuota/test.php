@@ -4,6 +4,8 @@ public function testCalcularCuotaFinal(): void {
   $estaMetodo = false;
   $esEstatico = false;
   
+  var_dump($clase->getMethods());exit;
+  
   foreach ($clase->getMethods() as $m) {
    if ($m === "calcularCuotaFinal") {
     $estaMetodo = true;

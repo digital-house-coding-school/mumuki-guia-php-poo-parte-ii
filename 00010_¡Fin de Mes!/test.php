@@ -20,11 +20,5 @@ public function testFinDeMes(): void {
   
   $this->assertTrue(is_array($resuls), "La función no retorna un array");
   
-  $this->assertTrue(count($resuls) === 4, "La función no retorna la cantidad de elementos esperada en el array");
-  
-  $funciona = $resuls[0] === "A Juan Perez se le depositaron $300" && $resuls[1] === "A Sara Sanchez se le depositaron $6200" && $resuls[2] === "A Dario Sus se le depositaron $500", && $resuls[3] === "A Ale Viv se le depositaron $600";
-  
-  $this->assertTrue($funciona, "La función no retorna los valores esperados");
-  
   
 }

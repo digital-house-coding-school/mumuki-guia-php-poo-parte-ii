@@ -3,3 +3,11 @@ public function testImplementa(): void {
   
   $this->assertTrue($empleado instanceof Pagable, "La clase Empleado no implementa Pagable");
 }
+
+public function testPagar() : void {
+  $empleado = new Empleado("Dario", "Sus", "dario@dh.com", 500);
+  
+  $resul= $empleado->pagar();
+  
+  $this->assertTrue(strtolower($resul) === "a dario sus se le depositaron $500", "Se esperaba 'A Dario Sus se le depositaron $500' y se recibió $resul");
+}

@@ -4,5 +4,5 @@ public function testPagable(): void {
   $interface = new ReflectionClass('Pagable');
 
 
-  var_dump($interface);exit;
+  var_dump($interface->getMethods());exit;
 }

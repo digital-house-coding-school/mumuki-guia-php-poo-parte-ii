@@ -11,7 +11,7 @@ public function testPagar() : void {
   $prov->agregarPago(100);
   $prov->agregarPago(1000);
   
-  $resul= $empleado->pagar();
+  $resul= $prov->pagar();
   
   $this->assertTrue(is_string($resul), "El valor de retorno del método pagar debe ser un string");
   

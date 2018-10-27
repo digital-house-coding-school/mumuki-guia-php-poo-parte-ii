@@ -70,7 +70,7 @@ class ProveedorExterno extends Persona implements Pagable {
     foreach ($this->pagos as $pago) {
       $sueldo += $pago;
     }
-     return "A $nombre $apellido se le depositaron $sueldo";
+     return "A $nombre $apellido se le depositaron \$$sueldo";
   }
 }
 

@@ -11,7 +11,7 @@ public function testCantidadEstudiantes(): void {
    }
   }
   
-  $this->assertTrue($estaCantidad, "Falta el atributo 'cantidadEstudiantes');
+  $this->assertTrue($estaCantidad, "Falta el atributo 'cantidadEstudiantes'");
   
   $this->assertTrue($esEstatica, "El atributo cantidadEstudiantes no es estatico");
   

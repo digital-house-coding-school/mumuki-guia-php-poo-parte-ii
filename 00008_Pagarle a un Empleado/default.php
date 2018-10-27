@@ -15,4 +15,8 @@ class Empleado extends Persona {
   public function setSueldo($sueldo) {
     $this->sueldo = $sueldo;
   }
+  
+  public function ingresarAlEdificio($huella) {
+    $huella->verificar();
+  }
 }

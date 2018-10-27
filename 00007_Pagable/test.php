@@ -12,4 +12,8 @@ public function testPagable(): void {
   }
   
   $this->assertTrue($estaPagar, "No esta el método pagar dentro de la interfaz");
+  
+  $r = new ReflectionMethod("Pagable", "pagar");
+  
+  $this->assertTrue(count($r->getParameters()) === 0, "El método pagar no debe recibir parámetros");
 }

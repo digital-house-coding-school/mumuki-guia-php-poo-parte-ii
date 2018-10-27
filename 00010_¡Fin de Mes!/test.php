@@ -20,5 +20,8 @@ public function testFinDeMes(): void {
   
   $this->assertTrue(is_array($resuls), "La función no retorna un array");
   
+  $this->assertTrue(count($resuls) === 4, "La función no retorna la cantidad de elementos esperada en el array");
+  
+  
   
 }

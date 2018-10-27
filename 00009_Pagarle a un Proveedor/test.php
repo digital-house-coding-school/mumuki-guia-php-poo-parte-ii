@@ -15,5 +15,5 @@ public function testPagar() : void {
   
   $this->assertTrue(is_string($resul), "El valor de retorno del método pagar debe ser un string");
   
-  $this->assertTrue(strtolower($resul) === "a juan perez se le depositaron 1600", "Se esperaba 'A Juan Perez se le depositaron $1600' y se recibió '$resul'");
+  $this->assertTrue(strtolower($resul) === "a juan perez se le depositaron $1600", "Se esperaba 'A Juan Perez se le depositaron $1600' y se recibió '$resul'");
 }

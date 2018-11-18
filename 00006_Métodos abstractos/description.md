@@ -6,7 +6,7 @@ Una última característica de las clases abstractas es que pueden tener **méto
 
 Estos métodos solo pueden definirse en una clase abstracta y únicamente definen la firma de la función (nombre y parámetros de la misma). Un método abstracto funciona como un contrato, es decir, las clases hijas se veran obligadas a escribir dicho método, respetando la firma y completando el contenido de la función.
 
-Para esto vamos a agregar un método **abstracto** en la clase Persona llamado `ingresarAEdificio`. Esta función **debe recibir un parámetro** que será el medio de identificación.
+Para esto vamos a agregar un método **abstracto** en la clase Persona llamado `ingresarAlEdificio`. Esta función **debe recibir un parámetro** que será el medio de identificación.
 
 ¿Porqué decimos que este método es abstracto?
 

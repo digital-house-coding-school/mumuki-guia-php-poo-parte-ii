@@ -10,4 +10,4 @@ Para esto vamos a agregar un método **abstracto** en la clase Persona llamado `
 
 ¿Porqué decimos que este método es abstracto?
 
-Los empleados se van a identificar mediante una huella digital, mientras que los Estudiantes lo harán con una tarjeta. La implementación de estos métodos quedará pendiente para cada una de estas clases, pero al agregar el método abstracto, aseguraremos que toda persona tiene que poder `ingresarAEdificio`
+Los empleados se van a identificar mediante una huella digital, mientras que los Estudiantes lo harán con una tarjeta. La implementación de estos métodos quedará pendiente para cada una de estas clases, pero al agregar el método abstracto, aseguraremos que toda persona tiene que poder `ingresarAlEdificio`
